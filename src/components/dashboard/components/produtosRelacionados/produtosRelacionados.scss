@@ -1,0 +1,76 @@
+@use '../../../../index.scss' as *;
+
+.produtos-relacionados{
+    margin: 0 82px;
+}
+
+.produtos-relacionados-menu {
+    display: flex;
+    color: $cor-fonte;
+    padding: 0;
+    li {
+        list-style-type: none;
+        border: 1px solid $cor-fonte;
+        flex: 25%;
+        padding: 5px 0;
+        text-align: center;
+        transition: all 500ms ease;
+        &:hover {
+            cursor: pointer;
+            color: $cor-principal;
+        }
+    }
+
+    li.ativa {
+        color: $cor-principal;
+        font-weight: 700;
+    }
+}
+
+.lista-de-produtos{
+    display: flex;
+    background-color: white;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 3%;
+    padding: 10px 0;
+    min-height: 550px;
+
+    &::-webkit-scrollbar {
+        background-color: white;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: white;
+      }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background-color: $cor-fonte;
+        
+    }
+}
+
+.lista-de-produto-botao {
+    color: black;
+    position: relative;
+    font-size: 45px;
+
+    &:first-of-type {
+        top: 225px;
+        left: -25px;
+    }
+
+    &:nth-of-type(2) {
+        top: 225px;
+        left: 90vw;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    z-index: 1;
+    float: left;
+}

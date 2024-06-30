@@ -1,0 +1,120 @@
+@use '../../index.scss' as *;
+
+header {
+    background-color: white;
+    padding: 0 82px;
+    color: $cor-fonte;
+
+    strong {
+        color: $cor-principal;
+    }
+
+    ul {
+        display: flex;
+    
+        li {
+            list-style-type: none;
+        }
+    }
+
+    div {
+        border: 1px solid rgba(0, 128, 0, 0);
+    }
+}
+
+.linha-superior {
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+        width: 64%;
+}
+}
+
+.linha-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+
+    border-top: 1px solid #9F9F9F;
+    border-bottom: 1px solid #9F9F9F;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    .container-imagem {
+        margin-left: 2.5%;
+        margin-right: 5%;
+    }
+
+    .container-busca {
+        background-color: #F6F5F2;
+        border-radius: 10px;
+        flex: 3;
+        
+        
+        form {
+            display: flex;
+            border-radius: 25px;
+            margin: 10px;
+        }
+
+        input{
+            border: none;
+            background-color: #F6F5F2;
+            font-size: 14px;
+            font-weight: bolder;
+            flex: 75%;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: #F6F5F2;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        
+    }
+
+    .container-acoes {
+        margin-left: 5%;
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 2.5%;
+    }
+}
+
+.linha-inferior {
+    ul {
+        justify-content: space-between;
+        margin: 10px 6% 10px 0;
+
+        li {
+            transition: all 500ms;
+            &:hover {
+                color: $cor-principal;
+                cursor: pointer;
+            }
+        }
+    }
+
+    font-weight: 600;
+
+    .categoria-ativa {
+        color: $cor-principal;
+    }
+}

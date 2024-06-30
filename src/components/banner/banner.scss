@@ -1,0 +1,35 @@
+$cor-principal: #F71963;
+.banner {
+    height: 390px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+
+    .banner-content {
+        margin-top: 2%;
+        padding: 0 82px;
+        height: 100%;
+        width: 50%;
+        color: #F2F2F2;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        a {
+            background-color: $cor-principal;
+            color: #F2F2F2;
+            padding: 15px 50px;
+            border-radius: 5px;
+        }
+
+    }
+}

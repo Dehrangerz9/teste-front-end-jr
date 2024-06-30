@@ -1,0 +1,46 @@
+@use '../../index.scss' as *;
+
+.dashboard {
+    background-color: white;
+
+    > p {
+        color: $cor-principal;
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;        
+    }
+    >p.subtitulo {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: black;
+    }
+
+    > p.linhas-laterais {
+        display: flex;
+        align-items: center;
+        margin: 0px 10%;
+
+        &::before {
+            border-top: 1px solid #DEDEDE;
+            content: "";
+            flex-grow: 1;
+            margin-right: 20px;
+
+        }
+
+        &::after {
+            border-top: 1px solid #DEDEDE;
+            content: "";
+            flex-grow: 1;
+            margin-left: 20px
+        }
+    }
+
+    .linha-cartoes {
+        margin: 5vh 82px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

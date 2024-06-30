@@ -1,0 +1,42 @@
+@use '../../../../index.scss' as *;
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 49px 0px rgba(0,0,0,0.25);
+    color: black;
+
+    .produto-nome{
+        font-size: 15px;
+    }
+
+    .produto-preco {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .frete {
+        font-size: 12px;
+        color: $cor-principal
+    }
+
+    .botao-comprar{
+        color: white;
+        background-color: $cor-principal;
+        width: 100%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        transition: all 500ms ease;
+        font-weight: 700;
+        font-size: 14px;
+        border: 1px solid #f2f2f200;
+
+        &:hover{
+            cursor: pointer;
+            border: 1px solid $cor-principal;
+            color: $cor-principal;
+            background-color: white;
+        }
+    }
+}
