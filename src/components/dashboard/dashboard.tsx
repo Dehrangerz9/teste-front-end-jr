@@ -3,6 +3,8 @@ import ProdutosRelacionados from "./components/produtosRelacionados/produtosRela
 import CardCombackground from "./components/cardComBackground/cardComBackground";
 import defaultCardBackground from "../../assets/card-default-image.webp"
 import './dashboard.scss';
+import MarcasRelacionadas from "./components/marcasRelacionadas/marcasRelacionadas";
+import logoVtex from "../../assets/vtex-logo.webp"
 function Dashboard(){
     return (
         <div className="dashboard">
@@ -61,6 +63,18 @@ function Dashboard(){
                 />                
             </div>
             <p>Navegue Por Marcas</p>
+            <MarcasRelacionadas
+                listaDeMarcas={[
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex },
+                    { logoMarca: logoVtex }
+                ]}
+            />
         </div>
     )
 }
