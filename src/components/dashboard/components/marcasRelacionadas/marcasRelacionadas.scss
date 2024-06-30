@@ -1,0 +1,53 @@
+.lista-de-marcas-wrapper {
+    position: relative;
+    padding: 2vh 0;
+
+    .lista-de-marcas-botoes {
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0080BF;
+            font-weight: 200;
+            background-color: white;
+            border-radius: 100%;
+            min-width: 50px;
+            min-height: 50px;
+            position: absolute;
+            z-index: 1;
+            font-size: 36px;
+            box-shadow: 0px 4px 49px 0px rgba(0,0,0,0.25);
+
+            &:first-child {
+                top: 25%;
+                right: 10%;
+            }
+
+            &:last-child {
+                top: 25%;
+                left: 10%;
+            }
+        }
+    }
+}
+.lista-de-marcas {
+    display: flex;
+    overflow-x: scroll;
+    gap: 50px;
+    margin: 0 82px;
+    padding: 1vh 0;
+
+    .marca {
+        min-width: 210px;
+        min-height: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        box-shadow: 0px 4px 49px 0px rgba(0,0,0,0.25);
+
+        img {
+            padding: 10px;
+        }
+    }
+}
