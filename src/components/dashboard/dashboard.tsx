@@ -19,6 +19,8 @@ function Dashboard() {
           },
           {
             nome: "ACESSÓRIOS",
+            linkAPI:
+              "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json",
           },
           {
             nome: "TABLETS",
